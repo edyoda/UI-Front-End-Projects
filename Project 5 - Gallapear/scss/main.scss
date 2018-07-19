@@ -1,0 +1,60 @@
+@import "./materialize";
+
+// Vars
+$header-bg: url(../img/pattern.png);
+$header-height: 300px;
+
+//  Text Color Function: this will change the text color depending on the background color of the page
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+body {
+  background: $primary-color;
+  color: set-text-color($primary-color);
+}
+
+.main-header {
+  background: $header-bg;
+  color: #fff;
+  height: $header-height;
+  margin-bottom: 30px;
+
+  h1 {
+    margin: 0;
+    padding-top: 30px;
+  }
+}
+
+.img-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
+
+.card-content {
+  color: $primary-color;
+}
+
+.page-footer {
+  background: $secondary-color;
+}
+
+.footer-copyright {
+  background: $secondary-color-light;
+}
+
+.modal {
+  color: #333;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+  opacity: 0;
+}
