@@ -1,0 +1,66 @@
+.primary-overlay {
+  background: rgba(63, 57, 77, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-header {
+  background: url(../img/showcase.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  position: relative;
+}
+
+.main-header .showcase {
+  padding-top: 110px;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 5%;
+  left: 47%;
+  opacity: 0.5;
+}
+
+.box {
+  padding: 40px 10px !important;
+}
+
+.box h4 {
+  padding-bottom: 30px;
+}
+
+.section-boxes .row {
+  margin-bottom: 0 !important;
+}
+.section-contact .card-panel {
+  position: relative;
+  z-index: 1;
+}
+.section-contact {
+  position: relative;
+}
+
+#googlemap {
+  position: absolute;
+  /* background: url(../img/showcase.jpg); */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Media Queries  */
+@media (max-width: 600px) {
+  .main-header {
+    height: 50vh;
+  }
+}
