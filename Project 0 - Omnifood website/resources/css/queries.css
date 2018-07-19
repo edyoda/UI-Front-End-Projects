@@ -1,0 +1,131 @@
+
+/* ------- Big Tablets to 1200px (widths smaller than 1140px row)  ------ */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box{
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row { padding: 0 2%; }
+}
+
+/* ------- Small tablet to big tablets (from 767px to 1023px)  ------ */
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0;}
+    
+    .long-text {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .steps-box { margin-top: 10px; }
+    .steps-box:last-child{ margin-top: 10px;}
+    .works-step { margin-bottom: 40px;}
+    .works-step:last-child{ margin-bottom: 60px; }
+    .app-screen { width: 50%; }
+    .icon-small { 
+        width: 17px;
+        margin-right: 5px;                    
+    }
+    .city-feature { font-size: 90%;}
+    
+    .plan-box{ 
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .plan-price { font-size: 250%; }
+    
+    .contact-form { width: 90%; }
+}
+
+
+/* ------- Small Phones to small tablets (from less than 767px)  ------ */
+@media only screen and (max-width: 767px) {
+    body{ font-size: 16px; }
+    section { padding: 30px 0; }
+    
+    .row,
+    .hero-text-box { padding: 0 4%; }
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    .main-nav { display: none; }
+    .mobile-nav-icon{
+        display: inline-block;
+    }
+    
+    .main-nav{
+        float: left;
+        margin-top 25px;
+        margin-left: 25px;
+    }
+    
+    .main-nav li{
+        display: block;
+        margin-left: 10px;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        border: 0;
+        padding: 10px;
+        font-size: 100%; 
+    }
+    
+    .sticky .main-nav { margin-top: 10px; }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{ padding: 10px 0; }
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    .sticky .mobile-nav-icon i{ color: #555; }
+    
+    
+    
+    h1{ font-size: 180%; }
+    h2{ font-size: 150%; }
+    .long-text{ 
+        width: 100%; 
+        margin: 0;
+    }
+    .works-step { margin-bottom: 20px;}
+    .works-step:last-of-type{ margin-bottom: 20px; }
+    .works-step div{
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+        padding: 4px;
+        font-size: 120%;
+    }
+    .app-screen { width: 40%; }
+    .steps-box:first-child{ text-align: center;}
+    
+    .map-box{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .map {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    .form-box{
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 25px;
+    }
+    
+}
+
+/* ------- Small Phones from 0 to 480px small iphones ------ */
+@media only screen and (max-width: 480px) {
+    section { padding: 25px 0;}
+    .contact-form { width: 100%; }
+}
+
